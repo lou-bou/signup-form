@@ -17,6 +17,14 @@ section {
     display: flex;
 }
 
+#right {
+    flex: 0 0 70%;
+}
+
+#left {
+    flex: 0 0 30%;
+}
+
 a {
     text-decoration: none;
     color: #2596be;
@@ -28,10 +36,23 @@ a {
 .logo {
     font-family: 'Caviar Dreams', sans-serif;
     color: white;
+    font-size: 50px;
 }
 
 #left {
     background-image: url(files/bg.jpg);
+    position: relative;
+}
+
+#left > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.107);
 }
 
 /* Right */
@@ -79,10 +100,16 @@ h2 {
 
 form > div:not(:last-child) > div {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    padding: 10px;
+    padding-left: 40px;
     gap: 40px;
+}
+
+form > div:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 form label {
