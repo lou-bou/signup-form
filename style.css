@@ -6,3 +6,15 @@
     font-style: normal;
     font-display: swap;
 }
+
+section {
+    display: flex;
+}
+
+div {
+    border: black 3px solid;
+}
+
+#left {
+    background-image: url(files/bg.jpg);
+}
