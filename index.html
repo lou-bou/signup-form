@@ -7,72 +7,69 @@
     <title>Sign-up Form</title>
 </head>
 <body>
-    <section>
-        <div id="left">
-            <div>
-                <img src="files/icons8-jake-100.png" alt="Jake the Dog">
-                <h1 class="logo">JAKE</h1>
-            </div>
+    <div id="left">
+        <div>
+            <img src="files/icons8-jake-100.png" alt="Jake the Dog">
+            <h1 class="logo">JAKE</h1>
         </div>
+    </div>
 
-        <div id="right">
-            <div id="top">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize the deepest dreams. Sign up <em>now</em> to get started.</p>
+    <div id="right">
+        <div id="top">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize the deepest dreams. Sign up <em>now</em> to get started.</p>
 
-                <p>You <em>know</em> you want to.</p>
-            </div>
-            <div id="form">
-                <h2>Let's do this!</h1>
-                <form action="website.com/path" method="post">
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div id="form">
+            <h2>Let's do this!</h1>
+            <form action="website.com/path" method="post">
 
-                    <div>
-                        <div class="sub-container">
-                            <div class="field">
-                                <label for="fname">FIRST NAME</label>
-                                <br>
-                                <input type="text" id="fname" name="fname">
-                            </div>
-                        
-                            <div class="field">
-                                <label for="lname">LAST NAME</label>
-                                <br>
-                                <input type="text" id="lname" name="lname">
-                            </div>
+                <div>
+                    <div class="sub-container">
+                        <div class="field">
+                            <label for="fname">FIRST NAME*</label>
+                            <br>
+                            <input type="text" id="fname" name="fname" required>
                         </div>
-                        <div class="sub-container">
-                            <div class="field">
-                                <label for="email">EMAIL</label>
-                                <br>
-                                <input type="email" id="email" name="email">
-                            </div>
-                            <div class="field">
-                                <label for="phone">PHONE NUMBER</label>
-                                <br>
-                                <input type="number" id="phone" name="phone">
-                            </div>
-                        </div>
-                        <div class="sub-container">
-                            <div class="field">
-                                <label for="pass">PASSWORD</label>
-                                <br>
-                                <input type="password" id="pass" name="pass">
-                            </div>
-                            <div class="field">
-                                <label for="cpass">CONFIRM PASSWORD</label>
-                                <br>
-                                <input type="password" id="cpass" name="cpass">
-                            </div>
+                    
+                        <div class="field">
+                            <label for="lname">LAST NAME</label>
+                            <br>
+                            <input type="text" id="lname" name="lname">
                         </div>
                     </div>
-
-                    <div id="bottom">
-                        <button type="submit">Create Account</button>
-                        <p>Already have an account? <a href="github.com">Log in</a></p>
+                    <div class="sub-container">
+                        <div class="field">
+                            <label for="email">EMAIL</label>
+                            <br>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="field">
+                            <label for="phone">PHONE NUMBER</label>
+                            <br>
+                            <input type="tel" id="phone" name="phone" pattern="0[0-9]{9}" placeholder="0566342450">
+                        </div>
                     </div>
-                </form>
-            </div>
+                    <div class="sub-container">
+                        <div class="field">
+                            <label for="pass">PASSWORD*</label>
+                            <br>
+                            <input type="password" id="pass" name="pass" minlength="8" required>
+                        </div>
+                        <div class="field">
+                            <label for="cpass">CONFIRM PASSWORD*</label>
+                            <br>
+                            <input type="password" id="cpass" name="cpass" minlength="8" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bottom">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="github.com">Log in</a></p>
+                </div>
+            </form>
         </div>
-        
-    </section>
+    </div>
 </body>
 </html>
